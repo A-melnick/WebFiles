@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week 4: Cascading Style Sheets 1</title>
+
+  <link rel="stylesheet" href="style.css"
+  <!-- linking to css externaly -->
+  <!-- <style>
+used to put css in this site directly
+    </style> -->
+</head>
+<body>
+<section id="Notes html">
+  <h1>html Notes - nested lists (top header)</h1>
+  <ul>
+    <li >Coffee</li>
+    <li>Tea
+      <ul style="color:rgb(0,200,0)">
+        <!-- rgb(), hex codes #6 letters 6 numbers, color names -->
+        <li>Black</li>
+        <li>Green</li>
+      </ul>
+    </li>
+    <li>Water</li>
+  </ul>
+</section>
+
+<section id="img">
+  <h2>image insertion</h2>
+  <a href="https://google.com"><img src="img.jpg"></a>
+  <!-- making the image a clikcable link to another site -->
+</section>
+
+<section id="text box and radio type">
+  <form>
+  <label for="fname">First name:</label><br/>
+  <input type="text" name="fname"><br/>
+  <label for="lname">Last name:</label><br/>
+  <input type="text" name="lname"><br/>
+  <br>
+  <input type="radio" id="coffee" name="coffee"><label for="coffee">Coffee</label><br/>
+  <input type="radio" id="tea" name="tea"><label for="tea">Tea</label><br/>
+  <input type="radio" id="water" name="water"><label for="water">Water</label>
+
+  <!-- a text box, radio (selection buttons); similar to multiple choice-->
+  <!-- <br> line break: do NOT use ever EXCEPT here -->
+  </form>
+
+  <a href="#Notes html">Back to top</a>
+</section>
+
+<section>
+  <form>
+  <button id="sumbit">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>
