@@ -1,0 +1,35 @@
+/*this is a comment - also ctrl /*/
+
+body{
+  font-family: cursive;
+  background-color: black;
+  color: white;
+  margin: 40px;
+  margin-left: 100px;
+}
+h1{
+  /* color: magenta; */
+  font-size: 30px;
+  font-weight: 900;
+  border: solid .2px white;
+  border-radius: 15px;
+  /* border is just border; border-radius rounded corners */
+}
+
+/* #img{
+  background-color: rgb(30,100,0)
+
+} */
+
+ul {
+  /* color: red; */
+  font-weight: 900;
+}
+
+img {
+  width: 20vw;
+}
+
+button{
+  background-color: magenta;
+}
