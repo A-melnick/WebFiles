@@ -1,0 +1,46 @@
+body {
+  font-family: arial;
+  font-weight: 100;
+}
+
+p{
+  font-size: 20px;
+}
+
+h1{
+  font-family:"Fjalla One"
+}
+
+.grey {
+  color: rgb(100,100,100)
+}
+
+.background{
+  background-color: rgb(225, 225, 225)
+}
+
+p.background {
+  color: red;
+}
+
+/* p.background; .background, p; .background p */
+
+span {
+  color: purple;
+  font-weight: bold;
+}
+
+#sit{
+  font-family: cursive;
+}
+
+hr{
+  border: dashed rgb(225, 225, 0) 2px;
+}
+/* solid, dotted, dashed, double, ridge, and groove */
+
+/* #second {
+  font-weight: bold;
+} */
+
+/* style you want: property !important (this will override other css design elements) */
