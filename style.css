@@ -1,52 +1,71 @@
 /*this is a comment - also ctrl /*/
 
 body{
-  font-family: cursive;
+  /* font-family: cursive; */
+  font-family: Roboto;
   background-color: #C4A29E;
   color: #002A32;
-  margin: 40px;
+  margin: 10px;
   margin-left: 40px;
 }
 
 h1{
+  width: 20vw;
+  margin: auto;
+  text-align: center;
   font-size: 40px;
   padding: 7px 7px 7px 7px;
   font-weight: 900;
-  border: solid 1px white;
-  border-radius: 20px;
   /* border is just border; border-radius rounded corners */
 }
 
 h2{
   font-size: 20px;
-  padding: 7px 7px 7px 7px;
-  border: solid 1px white;
-  border-radius: 20px;
+  margin: auto;
+  text-align: center;
   /* border is just border; border-radius rounded corners */
 }
 
-h3{
+h3 {
   font-size: 20px;
-  padding: 7px 7px 7px 7px;
-  border: solid 1px white;
-  border-radius: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 20px;
+  padding: 2px 2px 2px 2px;
+  font-weight: bold;
+  margin-left: 43.6vw;
 }
 
 a{
   font-size: 20px;
-
 }
 
-ul {
+#list {
   /* color: red; */
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bold;
   border: solid 1px white;
   border-radius: 20px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 30vw;
 }
 
 p {
   /* color: red; */
-  font-size: 15;
+  font-size: 20px;
+  font-weight: bold;
   margin: 50px;
   text-align: center;
   padding: 10px 10px 10px 10px;
