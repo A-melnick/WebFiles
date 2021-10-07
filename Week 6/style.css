@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+}
+
+p {
+  color: #345e46;
+  font-family: helvetica;
+  margin-left: 1vw;
+}
+
+h1, h2 {
+  font-family: Yanone Kaffeesatz;
+  margin-left: .5vw;
+  color: #152622;
+}
+
+#view {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+#view img{
+  width: 100vw;
+  position: relative;
+  bottom: 300px;
+}
+
+#view h1 {
+  z-index: 1;
+  position: relative;
+  font-size: 10vw;
+  top: 7vh;
+}
