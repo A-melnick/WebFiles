@@ -5,18 +5,22 @@ body {
 p {
   color: #345e46;
   font-family: helvetica;
-  margin-left: 1vw;
 }
 
-h1, h2 {
+h1 {
+  font-family: "Yanone Kaffeesatz";
+  color: white;
+}
+
+h2 {
   font-family: Yanone Kaffeesatz;
-  margin-left: .5vw;
-  color: #152622;
+  color: #345e46;
+  font-size: 40px;
 }
 
 #view {
   width: 100vw;
-  height: 90vh;
+  height: 60vh;
   overflow: hidden;
   margin: 0px;
   padding: 0px;
@@ -25,12 +29,52 @@ h1, h2 {
 #view img{
   width: 100vw;
   position: relative;
-  bottom: 300px;
+  bottom: 200px;
 }
 
 #view h1 {
   z-index: 1;
   position: relative;
   font-size: 10vw;
-  top: 7vh;
+  top: 5vh;
+  margin: 0 0 0 3vw;
 }
+
+#one, #two, #three{
+  margin: 0 3vw 3vw 3vw;
+}
+
+button {
+  background-color: #345e46;
+  font-family: "Yanone Kaffeesatz";
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 7px 15px;
+  position: relative;
+  left: 50vw;
+}
+
+button:active {
+  background-color: white;
+}
+
+button:hover {
+  border: solid orange 3px;
+}
+
+/* a:visited {
+  color: green;
+}
+
+a:link{
+  color: blue;
+}
+
+a:active {
+  color:red;
+}
+
+a:hover{
+  font-size: 105%;
+  color: lightgrey;
+} */
