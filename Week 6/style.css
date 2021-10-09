@@ -9,7 +9,7 @@ p {
 
 h1 {
   font-family: "Yanone Kaffeesatz";
-  color: white;
+  color: #031c0a;
 }
 
 h2 {
@@ -62,7 +62,7 @@ button:hover {
   border: solid orange 3px;
 }
 
-/* a:visited {
+a:visited {
   color: green;
 }
 
@@ -77,4 +77,4 @@ a:active {
 a:hover{
   font-size: 105%;
   color: lightgrey;
-} */
+}

@@ -8,18 +8,18 @@
 
 <body>
   <section id="view">
-    <h1>Welcome</h1>
+    <h1 id="viewtext">Welcome</h1>
     <img alt="viewmountains" src="view.jpg" id="view2">
   </section>
 
   <section id="one">
-    <h2>Hello</h2>
+    <h2 id="clean">Hello friends</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </section>
 
   <section id="two">
-    <h2>Hello section two<a href="https://google.com"></h2>
+    <h2>Hello section <a href="https://google.com">two</a></h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </section>
@@ -27,11 +27,29 @@
   <section id="three">
     <h2>There is a button in this section</h2>
     <button id="mybutton">Click here</button>
+    <button id="mybutton2">Click here</button>
     </section>
 
   <script>
     console.log("javascript working");
-    document.getElementById("mybutton").addEventListener("click", function(){alert("you pushed the button!")})
+    document.getElementById("mybutton").addEventListener("click", function(){alert("you pushed the button!")});
+    document.getElementById("mybutton2").addEventListener("click", buttonClicked)
+    document.getElementById("one").addEventListener("click", buttonClicked2)
+    document.getElementById("view").addEventListener("click", viewClicked)
+
+    function buttonClicked(){
+      alert("you pushed the second button!");
+      document.getElementById("viewtext").innerHTML = "Humans ruin this...";
+    }
+
+    function buttonClicked2(){
+      document.getElementById("clean").innerHTML = "Learn how to clean the environment!";
+    }
+
+    function viewClicked(){
+      alert("You clicked the mountain image");
+    }
+
   </script>
   </body>
 
