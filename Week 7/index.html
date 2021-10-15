@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quote machine</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section>
+  <h1 id="qtext">Welcome to the quote machine. Click the button to get a random quote!</h1>
+  <button id="newquote">New Quote</button>
+</section>
+
+<script>
+  const quotes = ["Today is the day you will conquer the world.", "If you were better today than yesterday, you have succeeded.", "Pet a dog, eat good fod, and take a nap. Everything will be okay.",
+  "Dance like nobody is watching...", "Be yourself because everyone else is taken.", "Life goes on no matter what, so live it however you see fit.", "Without music, life would suck.", "Climb the mountain and forget the world.", "People suck, so get a dog:)"];
+  let quotecount = 0;
+
+  document.getElementById("newquote").addEventListener("click", buttonClicked);
+
+  function buttonClicked(){
+    console.log(quotes[quotecount]);
+    document.getElementById("qtext").innerHTML = quotes[quotecount];
+    if(quotecount>=8){
+      quotecount = 0;
+    }else{
+    quotecount++;
+    }
+    }
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+section {
+  background-color: #4fb9ff;
+  margin: 30vh 20vw;
+  padding: 10vh 10vw;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Montserrat;
+  border: #ccdde8 solid 2px;
+}
+
+button {
+  border-radius: 10px;
+  border: white;
+  padding: 2vh 3vw;
+  margin-top: 2vh;
+  background-color: #ccdde8;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+button:hover {
+  border: white solid 1px;
+}
+
+h1 {
+  color: #2a343b;
+}
