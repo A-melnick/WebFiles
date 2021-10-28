@@ -1,0 +1,58 @@
+body {
+  background-color: #B8C4BB;
+  font-family: "Quicksand";
+}
+
+#img img{
+  width: 100vw;
+  position: relative;
+  bottom: 100px;
+}
+
+#img {
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.weekdays {
+  border-radius: 35px;
+  padding: 10px;
+  border-color: #C9D6EA;
+  border-width: thick;
+  font-family: "Quicksand";
+  font-size: 18px;
+  margin: 30px 40px 40px 40px;
+}
+
+#buttontext {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+.weekdays:hover {
+  background-color: #C9D6EA;
+  font-size: 15px;
+}
+
+.weekdays:active {
+  background-color: #C9D6EA;
+}
+
+#filler {
+  border: solid black 3px;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 10px 10px 10px 10px;
+}
+
+title {
+  color: white;
+  font-size: 40px;
+  font-family: "Quicksand";
+}
