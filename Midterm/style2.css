@@ -22,8 +22,12 @@ html , body {
   display: block;
 }
 
-#content {
+.content {
+  border: white solid 5px;
   padding-top: 100px;
   padding-left: 40px;
-  padding-right: 40px;
+}
+
+.start {
+
 }
