@@ -7,31 +7,58 @@
   <title>Welcome to Self Care</title>
 </head>
 
-<section id="img">
-  <img alt="self_care" src="selfcare.jpg" id="img_flowers">
-</section>
-
 <body>
-  <div class="button">
-    <h1 id="buttontext">Welcome to Self-Care</h1>
-    <a href="indexSu.html"><button class="weekdays">Sunday</button></a>
-    <a href="indexM.html"><button class="weekdays">Monday</button></a>
-    <a href="indexTu.html"><button class="weekdays">Tuesday</button></a>
-    <a href="indexW.html"><button class="weekdays">Wednesday</button></a>
-    <a href="indexTh.html"><button class="weekdays">Thursday</button></a>
-    <a href="indexF.html"><button class="weekdays">Friday</button></a>
-    <a href="indexSa.html"><button class="weekdays">Saturday</button></a>
+
+  <div>
+    <img alt="self_care" src="selfcare.jpg" id="img_flowers">
+    <div id="borderLeft"><h1 class="title">Welcome to Self-Care</h1></div>
   </div>
 
-<!-- <div style="text-align: center; border: 1px solid">
-  <input type="button" value="button">
-</div> -->
+  <div class="weekbuttons">
 
-  <section id="filler">
+  <form>
+    <button class="weekdays" formaction="indexSu.html">Sunday</button>
+    <button class="weekdays" formaction="indexM.html">Monday</button>
+    <button class="weekdays" formaction="indexTu.html">Tuesday</button>
+    <button class="weekdays" formaction="indexW.html">Wednesday</button>
+    <button class="weekdays" formaction="indexTh.html">Thursday</button>
+    <button class="weekdays" formaction="indexF.html">Friday</button>
+    <button class="weekdays" formaction="indexSa.html">Saturday</button>
+  </form>
+
+  </div>
+
+  <div id="filler">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+  </div>
+
+  <section>
+    <h1 id="quotetitle">Click below for daily quotes</h1>
+    <button id="newquote">New Quote</button>
   </section>
+
+  <script>
+    const quotes = ["Today is the day you will conquer the world.", "If you were better today than yesterday, you have succeeded.", "Pet a dog, eat good fod, and take a nap. Everything will be okay.",
+    "Dance like nobody is watching...", "Be yourself because everyone else is taken.", "Life goes on no matter what, so live it however you see fit.", "Without music, life would suck.", "Climb the mountain and forget the world.", "People suck, so get a dog:)"];
+    let quotecount = 0;
+
+    document.getElementById("newquote").addEventListener("click", buttonClicked);
+
+    function buttonClicked(){
+      console.log(quotes[quotecount]);
+      document.getElementById("quotetitle").innerHTML = quotes[quotecount];
+      if(quotecount>=8){
+        quotecount = 0;
+      }else{
+      quotecount++;
+
+    }
+    }
+    // week 7 partial code for quotes
+
+  </script>
 
   </body>
 

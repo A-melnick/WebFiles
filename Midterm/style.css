@@ -1,43 +1,59 @@
 body {
   background-color: #B8C4BB;
   font-family: "Quicksand";
+  margin: 0px;
+  width: 100vw;
 }
 
-#img img{
+#img_flowers{
   width: 100vw;
   position: relative;
-  bottom: 100px;
-}
-
-#img {
-  width: 100vw;
+  bottom: 10px;
   height: 60vh;
   overflow: hidden;
   margin: 0px;
   padding: 0px;
+  object-fit: cover;
+}
+
+h1 {
+  z-index: 1;
+  position: relative;
+  margin-left: 50px;
+  font-weight: 3000;
+  border: 2px solid white;
+  padding: 8px;
+  background-color: white;
+  border-radius: 15px;
+  border-color: #C9D6EA;
+  border-width: thick;
+}
+
+#borderLeft {
+  border-left: 2px solid white;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
 }
 
 .weekdays {
-  border-radius: 35px;
+  border-radius: 15px;
   padding: 10px;
   border-color: #C9D6EA;
   border-width: thick;
   font-family: "Quicksand";
   font-size: 18px;
-  margin: 30px 40px 40px 40px;
+  margin: 20px 40px 40px 40px;
 }
 
-#buttontext {
+.weekbuttons {
   text-align: center;
-}
-
-.button {
-  text-align: center;
+  position: relative;
 }
 
 .weekdays:hover {
   background-color: #C9D6EA;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .weekdays:active {
@@ -47,12 +63,43 @@ body {
 #filler {
   border: solid black 3px;
   border-radius: 10px;
-  margin: 4px;
+  margin: 4px 4px 100px 4px;
   padding: 10px 10px 10px 10px;
+  font-weight: 700;
 }
 
-title {
-  color: white;
-  font-size: 40px;
-  font-family: "Quicksand";
+html , body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  paddding: 0px;
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #B8C4BB;
+  /* margin: 55vh 33vw; */
+  text-align: center;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 17px;
+  border: solid 7px #ccdde8;
+  padding: 2vh 3vw;
+  background-color: white;
+  font-weight: bold;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  font-size: 15px;
+}
+
+#quotetitle {
+  width: 200px;
+  margin: auto;
 }
