@@ -1,4 +1,14 @@
-/*this is a comment - also ctrl /*/
+@media screen and (min-width:700px) {
+  #name h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:701px) {
+  #name h1 {
+    font-size: 40px;
+  }
+}
 
 body{
   font-family: cursive;
@@ -14,7 +24,6 @@ h1{
   font-weight: 900;
   border: solid 1px white;
   border-radius: 20px;
-  /* border is just border; border-radius rounded corners */
 }
 
 h2{
@@ -22,12 +31,11 @@ h2{
   padding: 7px 7px 7px 7px;
   border: solid 1px white;
   border-radius: 20px;
-  /* border is just border; border-radius rounded corners */
 }
 
 h3{
   font-size: 20px;
-  padding: 7px 7px 7px 7px;
+  padding: 10px 10px 10px 10px;
   border: solid 1px white;
   border-radius: 20px;
 }

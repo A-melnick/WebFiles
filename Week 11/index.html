@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <title>Responsive site</title>
+</head>
+
+<body>
+  <div>
+    <h1>Aliey Melnick</h1>
+    <h2>allisonfmelnick@gmail.com</h2>
+    <h2>914.486.1977</h2>
+    <h2 id="linkedin"><a href="https://www.linkedin.com/in/aliey-melnick/">LinkedIn</a></h2>
+  </div>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'work')" id="defaultOpen">Work Experience</button>
+    <button class="tablinks" onclick="openCity(event, 'edu')">Education</button>
+    <button class="tablinks" onclick="openCity(event, 'activities')">Activities</button>
+    <button class="tablinks" onclick="openCity(event, 'assets')">Portfolio</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="work" class="tabcontent">
+    <h3>NBC Universal Comcast</h3>
+    <p>NBC Entertainment Digital Photography Summer Intern</p>
+
+    <h3>Pittsburgh Penguins Organization</h3>
+    <p>Corporate Partnerships Intern</p>
+
+    <h3>Desserts by Lauren Fund</h3>
+    <p>Co-Founder; a subsidiary of Tower of Cancer Research Foundation</p>
+
+    <h3>Eldora Mountain</h3>
+    <p>Lift Operator</p>
+  </div>
+
+  <div id="edu" class="tabcontent">
+    <h3>University of Colorado Boulder</h3>
+      <p><em>Major:</em> B.S.in Business Administration</p>
+      <p><em>Minor:</em> Creative Technology and Design</p>
+  </div>
+
+  <div id="activities" class="tabcontent">
+    <h3>Activities</h3>
+    <p>Chi Omega</p>
+  </div>
+
+  <div id="assets" class="tabcontent">
+    <h3>Portfolio</h3>
+    <p>Paintings/Photography</p>
+
+
+<div id="imgs">
+  <img src="assets/cold.jpg" alt="coldplace" id="pic1" >
+  <img src="assets/mountain.jpg" alt="mountainfog" id="pic2" >
+  <img src="assets/road.jpg" alt="roadbirdeye" id="pic3" >
+  <img src="assets/lake.jpg" alt="lake" id="pic4" >
+</div>
+</div>
+  <script>
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+  </script>
+
+</body>
+
+</html>

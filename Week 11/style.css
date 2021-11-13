@@ -1,0 +1,131 @@
+@media screen and (min-width:800px){
+  #imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header two"
+    "one three"
+    "four five";
+  }
+}
+
+@media screen and (max-width:801px){
+  #imgs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "two"
+    "one"
+    "three"
+    "four"
+    "five";
+  }
+}
+
+body {
+  background-color: #605b61;
+  font-family: "Quicksand";
+  margin: auto 10vw auto 10vw;
+}
+
+h1 {
+  color: #bcbec2;
+  text-align: center;
+  font-size: 50px;
+  vertical-align: middle;
+  font-family: "Quicksand";
+  font-weight: bold;
+}
+
+h2 {
+  color: #bcbec2;
+  text-align: center;
+  font-size: 18px;
+}
+
+p {
+  margin-left: 40px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  margin-top: 25px;
+  border: 1px solid #ccc;
+  background-color: #bcbec2;
+  border-radius: 20px;
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  color: #bcbec2;
+  /* color: white; */
+  animation: fadeEffect 1s;
+  margin-top: 100px;
+}
+
+a {
+  color: #bcbec2;
+}
+
+a:visited {
+  color: #bcbec2;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#imgs img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+#pic2 {
+  grid-area: three;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+}
+
+#pic4 {
+
+  grid-area: one;
+  /* grid-row-start: 2;
+  grid-row-end: 2; */
+}
+
+#pic3 {
+  grid-area: header;
+  /* grid-row-start: 3; */
+}
