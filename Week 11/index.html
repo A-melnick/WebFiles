@@ -8,39 +8,128 @@
 </head>
 
 <body>
-  <div>
+  <div id="tabbar">
     <h1>Aliey Melnick</h1>
     <h2>allisonfmelnick@gmail.com</h2>
     <h2>914.486.1977</h2>
-    <h2 id="linkedin"><a href="https://www.linkedin.com/in/aliey-melnick/">LinkedIn</a></h2>
+    <h2 id="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/aliey-melnick/" target="_blank">LinkedIn</a></h2>
   </div>
 
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'work')" id="defaultOpen">Work Experience</button>
     <button class="tablinks" onclick="openCity(event, 'edu')">Education</button>
-    <button class="tablinks" onclick="openCity(event, 'activities')">Activities</button>
+    <button class="tablinks" onclick="openCity(event, 'activities')">Skills/Activities</button>
     <button class="tablinks" onclick="openCity(event, 'assets')">Portfolio</button>
   </div>
 
-  <!-- Tab content -->
-  <div id="work" class="tabcontent">
-    <h3>NBC Universal Comcast</h3>
-    <p>NBC Entertainment Digital Photography Summer Intern</p>
-
-    <h3>Pittsburgh Penguins Organization</h3>
-    <p>Corporate Partnerships Intern</p>
-
-    <h3>Desserts by Lauren Fund</h3>
-    <p>Co-Founder; a subsidiary of Tower of Cancer Research Foundation</p>
-
-    <h3>Eldora Mountain</h3>
-    <p>Lift Operator</p>
+  <button type="button" class="collapsible" href="#nbc">NBC Universal Comcast</button>
+  <div class="content" id="nbc">
+    <h4>NBC Entertainment Digital Photography Summer Intern</h4>
+    <p><em>May 2019-August 2019</em></p>
+    <ul>
+      <li>Responsible for organization of digital assets covering television shows, such as America's Got Talent and The Good Place, <u>supporting marketing/publicity</u>;
+        production support for TV series episodic/galery shoots & special events</li>
+      <li>Prepared, organizedm and curated key photography assets for <u>PR purposes to post</u> on NBC's media distribution platform</li>
+      <li>Learned and utilized <u>Adobe Creative Suite</u> to support photo editors during and after photoshoots</li>
+      <li>Ditizing archived photography for explotation on the NBC Universal digital platforms</li>
+    </ul>
   </div>
+
+  <button type="button" class="collapsible">Pittsburgh Penguins Organization</button>
+  <div class="content">
+    <h4>Corporate Partnerships Summer Intern</h4>
+    <p><em>May 2021-September 2021</em></p>
+    <ul>
+      <li>Assembled recaps for the end of the fiscal season for each partner with <u>proof of performance images and metrics</u> from <u>social media advertising, live in-game advertising</u>
+      (in-ice, boards surrounding the arena, and score board), <u>and website page takeovers</u></li>
+      <li>Takes the lead on multiple weekly and long-term projects</li>
+      <li>Supporting partnership, marketing, surrounding teams in all areas of the corporate sales and activation process, including identifying
+        idustry trends through the local community and brands that are actively investing in sports partnerships</li>
+      <li><u>Aquire new leads for the partnership sales</u> team through prospect, market, and category research</li>
+    </ul>
+  </div>
+
+  <button type="button" class="collapsible">Desserts by Lauren Fund</button>
+  <div class="content">
+    <h4>Co-Founder; a subsidiary of Tower of Cancer Research Foundation</h4>
+    <p><em>July 2017-Present</em></p>
+    <ul>
+      <li>Not for profit 501(c)3 organzation to honor Lauren J Melnick, our Mom</li>
+      <li>Fundraising efforts throughout the Fund's first year of operation <u>exceeded $50,000</u> towards advanced triple negative breast cancer
+        research under the Tower of Cancer Research Foundation</li>
+      <li>Executed business plans and overall strategy for enterprise</li>
+      <li><u>Co-leader in orchestrating fundraising events</u> including the annual DbL Baking Event</li>
+    </ul>
+  </div>
+
+  <button type="button" class="collapsible">Eldora Mountain Resort</button>
+  <div class="content">
+    <h4>Lift Operator</h4>
+    <p><em>October 2021-Present</em></p>
+    <ul>
+      <li>Assist hundreds of skiers and snowboarders each day in customer service initiatives and safe loading and unloading of ski lifts,
+        holding 2-6 people per chair</li>
+      <li>Communicate effectively and consistently with my team of lift operators throughout the day to ensure safety of guests and each other,
+        which includes dehydration and early signs of hypothermia/heat exhaustion</li>
+      <li>Monitor lifts, inlcuding signage, normal and emergency procedures, opening, operating, and closing procedures</li>
+    </ul>
+  </div>
+
+  <!-- Tab content -->
+  <!-- <div id="work" class="tabcontent"> -->
+    <!-- <h3><u>NBC Univeral Comcast</u></h3>
+    <h4>NBC Entertainment Digital Photography Summer Intern</h4>
+    <p><em>May 2019-August 2019</em></p>
+    <ul>
+      <li>Responsible for organization of digital assets covering television shows, such as America's Got Talent and The Good Place, <u>supporting marketing/publicity</u>;
+        production support for TV series episodic/galery shoots & special events</li>
+      <li>Prepared, organizedm and curated key photography assets for <u>PR purposes to post</u> on NBC's media distribution platform</li>
+      <li>Learned and utilized <u>Adobe Creative Suite</u> to support photo editors during and after photoshoots</li>
+      <li>Ditizing archived photography for explotation on the NBC Universal digital platforms</li>
+    </ul>
+
+    <h3><u>Pittsburgh Penguins Organization</u></h3>
+    <h4>Corporate Partnerships Summer Intern</h4>
+    <p><em>May 2021-September 2021</em></p>
+    <ul>
+      <li>Assembled recaps for the end of the fiscal season for each partner with <u>proof of performance images and metrics</u> from <u>social media advertising, live in-game advertising</u>
+      (in-ice, boards surrounding the arena, and score board), <u>and website page takeovers</u></li>
+      <li>Takes the lead on multiple weekly and long-term projects</li>
+      <li>Supporting partnership, marketing, surrounding teams in all areas of the corporate sales and activation process, including identifying
+        idustry trends through the local community and brands that are actively investing in sports partnerships</li>
+      <li><u>Aquire new leads for the partnership sales</u> team through prospect, market, and category research</li>
+    </ul> -->
+
+    <!-- <h3><u>Desserts by Lauren Fund</u></h3>
+    <h4>Co-Founder; a subsidiary of Tower of Cancer Research Foundation</h4>
+    <p><em>July 2017-Present</em></p>
+    <ul>
+      <li>Not for profit 501(c)3 organzation to honor Lauren J Melnick, our Mom</li>
+      <li>Fundraising efforts throughout the Fund's first year of operation <u>exceeded $50,000</u> towards advanced triple negative breast cancer
+        research under the Tower of Cancer Research Foundation</li>
+      <li>Executed business plans and overall strategy for enterprise</li>
+      <li><u>Co-leader in orchestrating fundraising events</u> including the annual DbL Baking Event</li>
+    </ul> -->
+
+    <!-- <h3><u>Eldora Mountain</u></h3>
+    <h4>Lift Operator</h4>
+    <p><em>October 2021-Present</em></p>
+    <ul>
+      <li>Assist hundreds of skiers and snowboarders each day in customer service initiatives and safe loading and unloading of ski lifts,
+        holding 2-6 people per chair</li>
+      <li>Communicate effectively and consistently with my team of lift operators throughout the day to ensure safety of guests and each other,
+        which includes dehydration and early signs of hypothermia/heat exhaustion</li>
+      <li>Monitor lifts, inlcuding signage, normal and emergency procedures, opening, operating, and closing procedures</li>
+    </ul>
+  </div> -->
 
   <div id="edu" class="tabcontent">
     <h3>University of Colorado Boulder</h3>
-      <p><em>Major:</em> B.S.in Business Administration</p>
-      <p><em>Minor:</em> Creative Technology and Design</p>
+      <p><em>Major:</em></p>
+        <p>B.S. in Business Administration</p>
+        <p>Emphasis in Marketing</p>
+      <p><em>Minor:</em></p>
+        <p>Creative Technology and Design</p>
   </div>
 
   <div id="activities" class="tabcontent">
@@ -62,28 +151,53 @@
 </div>
   <script>
     function openCity(evt, cityName) {
-      // Declare all variables
       var i, tabcontent, tablinks;
 
-      // Get all elements with class="tabcontent" and hide them
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
 
-      // Get all elements with class="tablinks" and remove the class "active"
       tablinks = document.getElementsByClassName("tablinks");
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
 
-      // Show the current tab, and add an "active" class to the button that opened the tab
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
 
-    // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
 
   </script>
 

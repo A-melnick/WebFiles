@@ -24,13 +24,14 @@
 }
 
 body {
-  background-color: #605b61;
+  background-color: #56667A;
   font-family: "Quicksand";
   margin: auto 10vw auto 10vw;
+  padding-bottom: 60px;
 }
 
 h1 {
-  color: #bcbec2;
+  color: #E0E0E1;
   text-align: center;
   font-size: 50px;
   vertical-align: middle;
@@ -39,13 +40,14 @@ h1 {
 }
 
 h2 {
-  color: #bcbec2;
+  color: #E0E0E1;
   text-align: center;
   font-size: 18px;
 }
 
-p {
+li {
   margin-left: 40px;
+  color: #c5c5c7;
 }
 
 /* Style the tab */
@@ -59,6 +61,7 @@ p {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 440px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -87,18 +90,52 @@ p {
   display: none;
   padding: 6px 12px;
   border-top: none;
-  color: #bcbec2;
-  /* color: white; */
-  animation: fadeEffect 1s;
+  color: #E0E0E1;
+  animation: fadeEffect 2s;
   margin-top: 100px;
 }
 
-a {
+a.linkedin {
   color: #bcbec2;
 }
 
-a:visited {
+a.linkedin:visited {
   color: #bcbec2;
+}
+
+.collapsible {
+  background-color: #bcbec2;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 90px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 400px;
+  transform: translate(50%, 50%);
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  margin-top: 26px;
+}
+
+#edu {
+  text-align: center;
 }
 
 @keyframes fadeEffect {
