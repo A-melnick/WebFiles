@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/635ced8e26.js" crossorigin="anonymous"></script>
   <title>Responsive site</title>
 </head>
 
@@ -22,6 +23,7 @@
     <button class="tablinks" onclick="openCity(event, 'assets')">Portfolio</button>
   </div>
 
+  <div id="work" class="tabcontent work">
   <button type="button" class="collapsible" href="#nbc">NBC Universal Comcast</button>
   <div class="content" id="nbc">
     <h4>NBC Entertainment Digital Photography Summer Intern</h4>
@@ -74,6 +76,8 @@
       <li>Monitor lifts, inlcuding signage, normal and emergency procedures, opening, operating, and closing procedures</li>
     </ul>
   </div>
+
+</div>
 
   <!-- Tab content -->
   <!-- <div id="work" class="tabcontent"> -->
@@ -137,17 +141,14 @@
     <p>Chi Omega</p>
   </div>
 
-  <div id="assets" class="tabcontent">
-    <h3>Portfolio</h3>
-    <p>Paintings/Photography</p>
+<div id="assets" class="tabcontent">
+  <div class="paintings" onclick="location.href='paintings.html'">
+    <i class="fas fa-palette"></i>
+  </div>
+  <div class="photography" onclick="location.href='photography.html'">
+    <i class="fas fa-camera-retro"></i>
+  </div>
 
-
-<div id="imgs">
-  <img src="assets/cold.jpg" alt="coldplace" id="pic1" >
-  <img src="assets/mountain.jpg" alt="mountainfog" id="pic2" >
-  <img src="assets/road.jpg" alt="roadbirdeye" id="pic3" >
-  <img src="assets/lake.jpg" alt="lake" id="pic4" >
-</div>
 </div>
   <script>
     function openCity(evt, cityName) {

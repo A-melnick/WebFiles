@@ -95,6 +95,11 @@ li {
   margin-top: 100px;
 }
 
+.work {
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
 a.linkedin {
   color: #bcbec2;
 }
@@ -132,6 +137,43 @@ a.linkedin:visited {
   background-color: #f1f1f1;
   border-radius: 15px;
   margin-top: 26px;
+  animation: fadeEffect 1s ease-in-out;
+}
+
+.fas {
+  font-size: 80px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.fas:hover {
+  cursor: pointer;
+}
+
+.paintings {
+  width: 150px;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.photography{
+  width: 150px;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+#assets {
+  margin: auto;
+  margin-top: 100px;
+  width: 380px;
+  padding: 10px;
+  justify-content: center;
+  padding-left: 30px;
 }
 
 #edu {
