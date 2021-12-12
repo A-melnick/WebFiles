@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/635ced8e26.js" crossorigin="anonymous"></script>
   <title>Aliey Melnick Resume/Portfolio</title>
@@ -24,12 +25,12 @@
   </div>
 
   <!-- <div id="work" class="tabcontent work"> -->
-  <div id="work" class="tabcontent work">
-    <button type="button" class="collapsible" id="nbcu" href="#nbc">NBC Universal Comcast</button>
-    <div class="content" id="nbc">
+  <div id="work" class="tabcontent">
+    <button type="button" class="collapsible" id="nbcu" onclick="openResume('nbcu')">NBC Universal Comcast</button>
+    <div class="content">
       <h4>NBC Entertainment Digital Photography Summer Intern</h4>
       <p><em>May 2019-August 2019</em></p>
-      <ul id="nbc">
+      <ul>
         <li>Responsible for organization of digital assets covering television shows, such as America's Got Talent and The Good Place, <u>supporting marketing/publicity</u>;
           production support for TV series episodic/galery shoots & special events</li>
         <li>Prepared, organizedm and curated key photography assets for <u>PR purposes to post</u> on NBC's media distribution platform</li>
@@ -107,7 +108,7 @@
   </div>
 
 </div>
-  <script>
+  <!-- <script>
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
 
@@ -121,7 +122,11 @@
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
 
-      document.getElementById(cityName).style.display = "block";
+      if (cityName != "work") {
+        document.getElementById(cityName).style.display = "block";
+      } else {
+        document.getElementById(cityName).style.display = "flex";
+      }
       evt.currentTarget.className += " active";
     }
 
@@ -157,7 +162,7 @@
       });
     }
 
-  </script>
+  </script> -->
 
 </body>
 

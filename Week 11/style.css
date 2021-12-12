@@ -1,37 +1,37 @@
-@media screen and (min-width:800px){
+@media screen and (min-width: 800px) {
   #imgs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "header two"
-    "one three"
-    "four five";
+      "header two"
+      "one three"
+      "four five";
   }
 }
 
-@media screen and (max-width:801px){
+@media screen and (max-width: 801px) {
   #imgs {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "header"
-    "two"
-    "one"
-    "three"
-    "four"
-    "five";
+      "header"
+      "two"
+      "one"
+      "three"
+      "four"
+      "five";
   }
 }
 
 body {
-  background-color: #56667A;
+  background-color: #56667a;
   font-family: "Quicksand";
   margin: auto 10vw auto 10vw;
   padding-bottom: 60px;
 }
 
 h1 {
-  color: #E0E0E1;
+  color: #e0e0e1;
   text-align: center;
   font-size: 50px;
   vertical-align: middle;
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  color: #E0E0E1;
+  color: #e0e0e1;
   text-align: center;
   font-size: 18px;
 }
@@ -87,51 +87,12 @@ li {
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 6px 12px; */
   border-top: none;
-  color: #E0E0E1;
+  color: #e0e0e1;
   animation: fadeEffect 2s;
-}
-
-/* .work {
-  display: grid !important;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 400px 1fr; */
-  /* position: relative; */
-  /* margin-top: 100px; */
-}
-
-/* #nbcu {
-  grid-column: 2;
-  grid-row: 1; */
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%); */
-}
-
-/* #pittpen {
-  grid-column: 2;
-  grid-row: 2; */
-  /* position: absolute;
-  top: 60%;
-  transform: translateY(-50%); */
-}
-/*
-#dbl {
-  grid-column: 2;
-  grid-row: 3; */
-  /* position: absolute;
-  top: 70%;
-  transform: translateY(-50%); */
-}
-/* 
-#eldo {
-  grid-column: 2;
-  grid-row: 4; */
-  /* position: absolute;
-  top: 80%;
-  transform: translateY(-50%); */
 }
 
 a.linkedin {
@@ -153,12 +114,13 @@ a.linkedin:visited {
   outline: none;
   font-size: 15px;
   border-radius: 15px;
-  width: 400px;
+  width: 50%;
   transform: translate(50%, 50%);
   text-align: center;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
   background-color: #ccc;
   border-radius: 15px;
 }
@@ -172,6 +134,7 @@ a.linkedin:visited {
   margin-top: 26px;
   animation: fadeEffect 1s ease-in-out;
   color: black;
+  width: 100%;
 }
 
 .fas {
@@ -183,6 +146,7 @@ a.linkedin:visited {
 
 .fas:hover {
   cursor: pointer;
+  color: #E1E1E1;
 }
 
 .paintings {
@@ -193,7 +157,7 @@ a.linkedin:visited {
   color: black;
 }
 
-.photography{
+.photography {
   width: 150px;
   float: left;
   padding: 10px;
@@ -229,8 +193,12 @@ li {
 }
 
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #imgs img {
@@ -246,7 +214,6 @@ li {
 }
 
 #pic4 {
-
   grid-area: one;
   /* grid-row-start: 2;
   grid-row-end: 2; */

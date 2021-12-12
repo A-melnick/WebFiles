@@ -1,37 +1,7 @@
-/* @media screen and (min-width:800px){
-  #imgs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    /* "header two" */
-    /* "one three"
-    "four five";
-  }
-}
-
-@media screen and (max-width:801px){
-  #imgs {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "two"
-    "one"
-    "three"
-    "four"
-    "five";
-  }
-}  */
-
 #imgs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center; */
 }
 
 #pic1 {
@@ -39,9 +9,6 @@
   order: 1;
   object-fit: cover;
   padding: 15px;
-  /* height: auto;
-  grid-column: 1;
-  grid-row: 1; */
 }
 
 #pic2 {
@@ -49,10 +16,6 @@
   order: 2;
   object-fit: cover;
   padding: 15px;
-
-  /* height: auto;
-  grid-column: 2;
-  grid-row: 1; */
 }
 
 #pic3 {
@@ -60,9 +23,6 @@
   order: 3;
   object-fit: cover;
   padding: 15px;
-  /* height: auto;
-  grid-column: 1;
-  grid-row: 2; */
 }
 
 #pic4 {
@@ -70,11 +30,49 @@
   order: 4;
   object-fit: cover;
   padding: 15px;
-  /* height: auto;
-  grid-column: 2;
-  grid-row: 2; */
 }
 
+#pic5 {
+  width: 300px;
+  order: 4;
+  object-fit: cover;
+  padding: 15px;
+}
+
+#pic6 {
+  width: 300px;
+  order: 4;
+  object-fit: cover;
+  padding: 15px;
+}
+
+#pic7 {
+  width: 300px;
+  order: 4;
+  object-fit: cover;
+  padding: 15px;
+}
+
+#pic8 {
+  width: 300px;
+  order: 4;
+  object-fit: cover;
+  padding: 15px;
+}
+
+#pic9 {
+  width: 300px;
+  order: 4;
+  object-fit: cover;
+  padding: 15px;
+}
+
+#pic10 {
+  width: 300px;
+  order: 4;
+  object-fit: cover;
+  padding: 15px;
+}
 body {
   background-color: #56667A;
   font-family: "Quicksand";
